@@ -1,0 +1,157 @@
+page,.main{
+    height: 100%;
+}
+.categroy-left{
+    float: left;
+    width: 150rpx;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.categroy-left .cate-list{
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    /* border-left : 2px solid #fff; */
+    font-size: 30rpx;
+}
+.categroy-left .cate-list.on{
+    color: #AB956D;
+    /* border-color: #AB956D; */
+}
+.categroy-right{
+    float: right;
+    width: 600rpx;
+    height: 90%;
+    overflow: hidden;
+    
+}
+.cate-box{
+    
+    padding:40rpx;
+    box-sizing: border-box;
+    overflow:scroll;
+}
+.cate-box .cate-banner image{
+    display: block;
+    width: 100%;
+    height: 250rpx;
+}
+.cate-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding:30rpx 0 55rpx;
+    text-align: center;
+    color: #AB956D;
+    font-size: 35rpx;
+}
+.cate-title::before{
+    position: absolute;
+    left: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 60rpx;
+    height: 4rpx;
+    background: #AB956D;
+}
+.cate-title::after{
+    position: absolute;
+    right: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 60rpx;
+    height: 4rpx;
+    background: #AB956D;
+}
+
+.product-list{
+    display: inline-block;
+    width: 500rpx;
+    height: 180rpx;
+    margin:auto;
+    }
+.product-list image{
+    width: 150rpx;
+    height: 150rpx;
+}
+/* .product-list text{
+  font-style:italic;
+  font-size:50rpx; 
+} */
+.product-list:nth-child(3n){
+    margin-right: 0;
+}
+/* .navigator-hover{
+    background: none;
+} */
+.product-list-detail {
+    display: inline-block;
+    width: 200rpx;
+    height: 50rpx;
+    
+}
+.product-list-text {
+    display: inline-block;
+    width: 200rpx;
+    height: 100rpx;
+    line-height: 40rpx;     
+    font-size:35rpx;
+    font-style:normal;
+    margin:auto 10px;
+    
+}
+.product-list-addminus {
+  display: inline;
+    bottom: 20rpx;
+    width: 250rpx;
+    height: 80rpx; 
+}
+.product-list-addminus text{
+    display: inline-block;
+    line-height: 80rpx;
+    text-align: center;
+    margin:auto;
+}
+.product-list-addminus image{
+  width:50rpx;
+  height: 50rpx; 
+}
+.count-add, .count-down{
+    font-size: 44rpx;
+    width: 50rpx;
+    height: 100%;
+}
+.price{
+    display: inline-block;
+    width: 300rpx;
+    height: 105rpx;
+    line-height: 50rpx;
+    font-size:40rpx;
+    font-style:normal;
+    margin: auto 10px;
+}
+.text-style{
+  /* margin-bottom: 50px */
+}
+.cart-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    padding:0 100rpx 0 80rpx;
+    box-sizing: border-box;
+    background: #AB956D;
+    color: #fff;
+}
+.cart-toatl-price{
+    float: left;
+    width: 120rpx;
+}
+.cart-next-step{
+    float: right;
+    width: 120rpx;
+    background: #000000;
+}

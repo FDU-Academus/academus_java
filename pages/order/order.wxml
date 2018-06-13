@@ -1,0 +1,20 @@
+<view class='main'>
+<view class="location">
+<picker bindchange='bindpickchange' value='{{index}}' range='{{location}}'>
+<view>
+<text>请选择您所在的房间名</text>
+<text>{{location[index]}}</text>
+</view>
+</picker>
+<view>输入你的学号</view>
+<input type='text'/>
+<view>您的姓名</view>
+<input type='text'/>
+</view>
+<view>
+<text bindtap='postorder'>submit</text>
+</view>
+<text>商品详情</text>
+<view wx:for="{{orderlist}}">{{item.NAME}}{{item.num}}
+</view>
+</view>
